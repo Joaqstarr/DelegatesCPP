@@ -13,6 +13,6 @@ namespace Events {
 		void operator-=(std::vector<std::function<void(params...)>> callback);
 
 	private:
-		std::vector<std::function<void(params)>> callbacks;
+		std::vector<std::function<void(params...)>> callbacks;
 	};
 }
