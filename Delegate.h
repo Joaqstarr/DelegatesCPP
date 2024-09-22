@@ -17,6 +17,10 @@ namespace Events {
 		{
 			Subscribe(callback);
 		}
+		void operator()(params...args)
+		{
+			Invoke(args...);
+		}
 		void operator-=(std::function<void(params...)> callback)
 		{
 			Unsubscribe(callback);
