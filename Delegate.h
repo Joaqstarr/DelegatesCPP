@@ -2,6 +2,7 @@
 #include <vector>
 #include <functional>
 #include <utility>
+#include <algorithm>
 
 namespace Events {
 
